@@ -9,7 +9,7 @@ import { OrdersContent } from "@/components/orders-content"
 import { ReportContent } from "@/components/report-content"
 import { SettingsContent } from "@/components/settings-content"
 import { TopNav } from "@/components/top-nav"
-import { Sidebar } from "@/components/sidebar"
+// import { Sidebar } from "@/components/sidebar"
 
 export default function DashboardPage() {
   const [activeTab, setActiveTab] = useState("dashboard")
@@ -29,7 +29,7 @@ export default function DashboardPage() {
               <TabsTrigger value="settings">Settings</TabsTrigger>
             </TabsList>
             <div className="flex">
-              {activeTab === "products" && <Sidebar />}
+              {/* {activeTab === "products" && <Sidebar />} */}
               <div className={`flex-1 ${activeTab === "products" ? 'ml-4' : ''}`}>
                 <TabsContent value="dashboard">
                   <DashboardContent />

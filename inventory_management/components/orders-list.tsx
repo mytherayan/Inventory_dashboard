@@ -168,7 +168,7 @@ export function OrdersList() {
         <div className="w-[300px] space-y-4">
           <Card>
             <CardHeader className="pb-2">
-              <CardTitle className="text-sm font-medium">Receipt of Goods</CardTitle>
+              <center><CardTitle className="text-la font-large">Receipt of Goods</CardTitle></center>
             </CardHeader>
             <CardContent>
               <div className="flex justify-center py-4">
