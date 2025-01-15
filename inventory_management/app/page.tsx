@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { DashboardContent } from "@/components/dashboard-content"
 import { ProductsContent } from "@/components/products-content"
-import { WarehouseContent } from "@/components/warehouse-content"
+import POSScreen from "@/components/pos-screen"
 import { OrdersContent } from "@/components/orders-content"
 import { ReportContent } from "@/components/report-content"
 import { SettingsContent } from "@/components/settings-content"
@@ -23,7 +23,7 @@ export default function DashboardPage() {
             <TabsList>
               <TabsTrigger value="dashboard">Dashboard</TabsTrigger>
               <TabsTrigger value="products">Products</TabsTrigger>
-              <TabsTrigger value="warehouse">Warehouse</TabsTrigger>
+              <TabsTrigger value="pos">POS</TabsTrigger>
               <TabsTrigger value="orders">Orders</TabsTrigger>
               <TabsTrigger value="report">Report</TabsTrigger>
               <TabsTrigger value="settings">Settings</TabsTrigger>
@@ -37,8 +37,8 @@ export default function DashboardPage() {
                 <TabsContent value="products">
                   <ProductsContent />
                 </TabsContent>
-                <TabsContent value="warehouse">
-                  <WarehouseContent />
+                <TabsContent value="pos">
+                  <POSScreen />
                 </TabsContent>
                 <TabsContent value="orders">
                   <OrdersContent />
